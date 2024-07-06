@@ -2,6 +2,7 @@ package passive
 
 import (
 	"fmt"
+	"github.com/projectdiscovery/subfinder/v2/pkg/subscraping/sources/subdomaincenter"
 	"strings"
 
 	"golang.org/x/exp/maps"
@@ -84,6 +85,7 @@ var AllSources = [...]subscraping.Source{
 	&securitytrails.Source{},
 	&shodan.Source{},
 	&sitedossier.Source{},
+	&subdomaincenter.Source{},
 	&threatbook.Source{},
 	&virustotal.Source{},
 	&waybackarchive.Source{},
