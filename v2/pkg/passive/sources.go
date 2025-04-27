@@ -20,6 +20,7 @@ import (
 	"github.com/projectdiscovery/subfinder/v2/pkg/subscraping/sources/chinaz"
 	"github.com/projectdiscovery/subfinder/v2/pkg/subscraping/sources/commoncrawl"
 	"github.com/projectdiscovery/subfinder/v2/pkg/subscraping/sources/crtsh"
+	"github.com/projectdiscovery/subfinder/v2/pkg/subscraping/sources/digitalyama"
 	"github.com/projectdiscovery/subfinder/v2/pkg/subscraping/sources/digitorus"
 	"github.com/projectdiscovery/subfinder/v2/pkg/subscraping/sources/dnsdb"
 	"github.com/projectdiscovery/subfinder/v2/pkg/subscraping/sources/dnsdumpster"
@@ -41,13 +42,13 @@ import (
 	"github.com/projectdiscovery/subfinder/v2/pkg/subscraping/sources/securitytrails"
 	"github.com/projectdiscovery/subfinder/v2/pkg/subscraping/sources/shodan"
 	"github.com/projectdiscovery/subfinder/v2/pkg/subscraping/sources/sitedossier"
+	"github.com/projectdiscovery/subfinder/v2/pkg/subscraping/sources/subdomaincenter"
 	"github.com/projectdiscovery/subfinder/v2/pkg/subscraping/sources/threatbook"
 	"github.com/projectdiscovery/subfinder/v2/pkg/subscraping/sources/threatcrowd"
 	"github.com/projectdiscovery/subfinder/v2/pkg/subscraping/sources/virustotal"
 	"github.com/projectdiscovery/subfinder/v2/pkg/subscraping/sources/waybackarchive"
 	"github.com/projectdiscovery/subfinder/v2/pkg/subscraping/sources/whoisxmlapi"
 	"github.com/projectdiscovery/subfinder/v2/pkg/subscraping/sources/zoomeyeapi"
-	"github.com/projectdiscovery/subfinder/v2/pkg/subscraping/sources/digitalyama"
 	mapsutil "github.com/projectdiscovery/utils/maps"
 )
 
@@ -84,6 +85,7 @@ var AllSources = [...]subscraping.Source{
 	&securitytrails.Source{},
 	&shodan.Source{},
 	&sitedossier.Source{},
+	&subdomaincenter.Source{},
 	&threatbook.Source{},
 	&threatcrowd.Source{},
 	&virustotal.Source{},
